@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "typescript-plugin-css-modules": "^2.2.0",
     "typings-for-css-modules-loader": "^1.7.0"
   }
 }
