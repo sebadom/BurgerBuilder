@@ -18,7 +18,7 @@ const Burger = (props: Props) => {
     }, []);
 
     if (!process.length) {
-        process = [<p>Please start adding Ingredients</p>]
+        process = [<p key="none">Please start adding Ingredients</p>]
     }
 
     return (

@@ -8,7 +8,9 @@ interface Props {
     remove: Function,
     disables: {
         [key in CustomizableSupportedIngredients]: boolean
-    }
+    },
+    canPurchase: boolean,
+    purchase: Function
 }
 
 
@@ -29,6 +31,7 @@ const BuildControls = (props: Props) => {
                     return null;
                 })
             }
+            <button disabled={!props.canPurchase} className={classes.OrderButton} onClick={() => props.purchase()}>ORDER NOW</button>
         </div>
     )
 }

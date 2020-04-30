@@ -22,7 +22,10 @@ type IngredientsDefinitionProps = {
     price: number
 };
 
-export type CustomizableSupportedIngredients = Exclude<SupportedIngredients, SupportedIngredients.BreadBottom | SupportedIngredients.BreadTop>;
+export type CustomizableSupportedIngredients = Exclude<
+    SupportedIngredients,
+    SupportedIngredients.BreadBottom | SupportedIngredients.BreadTop
+>;
 
 export type Ingredients = {
     [key in CustomizableSupportedIngredients]: number;
